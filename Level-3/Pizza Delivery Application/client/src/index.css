@@ -1,0 +1,575 @@
+/* * {
+    width:100vh;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  .App{
+    max-width: 1200px;
+    width: 100%;
+    min-height: 100vh;
+    box-shadow: 0 0 20px #eee;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  a{
+    text-decoration: none;
+  }
+  ul{
+    list-style: none;
+  }
+  button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  
+
+  h1{
+    font-size: 20px !important
+  } */
+
+
+
+
+  * {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  .App{
+    max-width: 1230px;
+    width: 100%;
+    margin: auto;
+    box-shadow: 0 2px 6px #555;
+    padding: 0 15px;
+  }
+  /* -------------------Header----------------- */
+  header{
+    width: 100%;
+    min-height: 100px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
+  a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #555;
+    letter-spacing: 2px;
+  }
+  a:hover{
+    color: lightseagreen;
+  }
+  ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0 15px;
+  }
+  .menu{
+    display: none;
+  }
+  .cart-icon{
+    position: relative;
+    margin-right: 15px;
+  }
+  .cart-icon span{
+    background: crimson;
+    border-radius: 20px;
+    color: white;
+    position: absolute;
+    top:-10px;
+    right: -10px;
+    font-size: 10px;
+    padding: 5px;
+  }
+  
+  
+  /* ---------------Products--------------- */
+  .products{
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-around !important;
+    flex-wrap: wrap !important;
+    margin: 15px 0 !important;
+  }
+  .card{
+    max-width: 370px !important;
+    width: 30% !important;
+    overflow: hidden !important;
+    height: 500px !important;
+    box-shadow: 0 0 5px #ccc !important;
+    padding: 15px !important;
+    margin: 25px !important;
+    cursor: pointer !important;
+  }
+  .card img{
+    width: 100% !important;
+    height: 80% !important;
+    max-height: 340px !important;
+    display: block !important;
+    object-fit: cover !important;
+    border-radius: 50% !important;
+  }
+  .card .box{
+    margin: 15px 0;
+  }
+  .card .box h3{
+    text-transform: uppercase;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .card .box p{
+    margin: 10px 0;
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    height: 70px;
+  }
+  .card .box h4{
+    color: crimson;
+  }
+  .card .box button{
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin: 10px 0;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  /* -----------------------Details--------------- */
+  .details{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px;
+  }
+  .details .img-container{
+    max-width: 400px;
+    width: 100%;
+    margin: 20px;
+    height: 450px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .details .img-container:hover{
+    background-size: 150%;
+    border: 1px solid #ddd;
+    cursor: zoom-in;
+  }
+  
+  .box-details{
+    max-width: 500px;
+    width: 100%;
+    margin: 20px;
+  }
+  .box-details h2{
+    text-transform: uppercase;
+    color: darkblue;
+    letter-spacing: 2px;
+    font-size: 2rem;
+  }
+  .box-details button,
+  .box-details .cart{
+    border: 1px solid #555;
+    outline: none;
+    background: #333;
+    cursor: pointer;
+    color: white;
+    margin-right: 5px;
+    margin-top: 10px;
+  }
+  .colors button,
+  .sizes button{
+    width: 35px;
+    height: 35px;
+  }
+  .box-details p{
+    line-height: 1.5;
+    margin: 10px 0;
+    opacity: 0.8;
+  }
+  .box-details h3{
+    color: crimson;
+  }
+  .box-details .thumb{
+    display: flex;
+    cursor: pointer;
+  }
+  .box-details .thumb img{
+    width: 50px;
+    height: 45px;
+    display: block;
+    object-fit: cover;
+    margin: 20px;
+    overflow: hidden;
+  }
+  .box-details .cart{
+    padding: 10px 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: inline-block;
+  }
+  @media (max-width: 700px){
+    header{
+      justify-content: space-between;
+    }
+    ul{
+      position: fixed;
+      top:0;
+      left: -100%;
+      width: 100%;
+      height: 100vh;
+      background: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      opacity: 0.98;
+      z-index: 99;
+      transition: 0.5s ease-in;
+    }
+    .menu{
+      display: block;
+      cursor: pointer;
+    }
+    ul li .menu{
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+  }
+  
+  @media (max-width: 500px){
+    .details{
+      padding: 0;
+    }
+    .box-details .thumb img{
+      width: 40px;
+      height: 35px;
+    }
+    .details .img-container{
+      height: 350px;
+    }
+  }
+  
+  /* ****** Cart ********************** */
+  .cart{
+    position: relative;
+    border: 1px solid #ccc;
+    transform: scaleY(0.98)
+  }
+  .amount span{
+    color: crimson;
+    padding: 0 20px;
+  }
+  .amount .count{
+    width: 40px;
+    height: 30px;
+    border: 1px solid #555;
+    outline: none;
+    background: #555;
+    cursor: pointer;
+  }
+  .delete{
+    position: absolute;
+    top:0;
+    right: 5px;
+    color: crimson;
+    cursor: pointer;
+    font-weight: 900;
+  }
+  .total{
+    margin:auto;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .total button{
+    background: #333;
+    color: rgb(248, 241, 241);
+    padding: 10px 25px
+  }
+  .total button:hover{
+    background-color: rgb(163, 90, 90);
+  }
+  .total h3{
+    justify-content: center;
+    align-items: center;
+    color: crimson;
+  }
+  .mybtn{
+    background-color: rgb(90, 83, 83);
+    border: 2px solid rgb(252, 248, 248);
+    border-radius: 20%;
+    box-shadow: #ccc;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+  }
+  .maindiv{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .mylink{
+   
+    color:black;
+    font-weight : medium;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: inherit; 
+  }
+
+  .maindiv p{
+    color: #555;
+    margin-top: auto;
+    display: block;
+    justify-content: center;
+    text-align: center;
+  }
+  .mylink:hover{
+    color: red;
+  }
+  
+  .cartbtn{
+    color: black;
+    background-color: red;
+    width: 100%;
+  }
+  .cartbtn:hover{
+    background-color: crimson
+  }
+
+  .main-img{
+    margin-top: -30px;
+    width: 100%;
+    height: 60vh;
+  }
+  /* //custom pizza  */
+  
+  
+  .ingredients {
+    position: absolute;
+    margin-top: -100px;
+  }
+  
+  .cheese {
+    width: 100%;
+    position: absolute;
+  }
+  
+  /* The container */
+  .container-checkbox {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom checkbox */
+  .container-checkbox .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container-checkbox:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container-checkbox input:checked ~ .checkmark {
+    background-color: red;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .container-checkbox .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container-checkbox input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container-checkbox .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid #0d0628;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+  /* The container */
+  .container-radio {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .container-radio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .container-radio .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container-radio:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .container-radio input:checked ~ .checkmark {
+    background-color: #2196f3;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .container-radio .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .container-radio input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .container-radio .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+  }
+  
+  .z1 {
+    z-index: 1;
+  }
+  
+  .z2 {
+    z-index: 2;
+  }
+  
+  .z3 {
+    z-index: 3;
+  }
+  .z4 {
+    z-index: 4;
+  }
+  
+  .proceedToCheckout {
+    margin-top: 30px;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    background: orange;
+    border: 0px;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 20px;
+    background-color:red;
+  }
+  .proceedToCheckout:hover{
+    background-color:crimson;
+  }
+
+
+    
+
+    
+  
+  /* ----------------- Header ------------------- */
+  @import url("./components/header/header.css");
+  
+  /* ----------------- Auth ------------------- */
+  @import url("./components/body/auth/auth.css");
+  
+  /* ----------------- Profile ------------------- */
+  @import url("./components/body/profile/profile.css");

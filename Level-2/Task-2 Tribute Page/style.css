@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-black-color: #2c2c2c;
+    --text-dark-color: #1f1f1f;
+    --text-light-color: #4b4b4b;
+    --gray100: #fafafa;
+    --gray200: #eaeaea;
+    --gray300: #e1e1e1;
+    --margin-s: 16px;
+    --margin-m: 32px;
+    --margin-l: 64px;
+    --margin-xl: 80px;
+    --margin-xxl: 96px;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background-image: url(./static/images/bg5.png);
+    color: var(--text-light-color);
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    padding: 0 16px;
+}
+
+main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header,
+#fig-section,
+#tribute-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 650px;
+    margin-bottom: var(--margin-l);
+}
+
+header {
+    margin-top: var(--margin-m);
+}
+
+h1,
+h2 {
+    font-weight: 400;
+    color: var(--text-dark-color);
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2.6rem;
+}
+
+header>p {
+    font-size: 2.5rem;
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+#img-div {
+    margin-bottom: var(--margin-l);
+}
+
+#image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    /* filter: grayscale(100%); */
+}
+
+#img-caption {
+    display: block;
+    position: relative;
+    top: var(--margin-s);
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.quote {
+    color: var(--text-black-color);
+    font-size: 2.3rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+#quote-cap {
+    margin: var(--margin-s);
+    font-style: italic;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+#time-line {
+    width: 100%;
+    margin: 48px 0 var(--margin-m) 0;
+}
+
+.details {
+    width: 100%;
+}
+
+.sm-content {
+    width: 100%;
+    padding: 20px 20px;
+    background-color: var(--gray200);
+    color: var(--text-dark-color);
+}
+
+.sm-content li {
+    line-height: 1.5;
+    padding: 8px 0;
+    letter-spacing: 0.2px;
+    list-style: none;
+}
+
+.sm-content li span {
+    margin: auto;
+}
+
+.sm-btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 8px 24px;
+    margin-top: 10px;
+    font-size: 3rem;
+    background-color: var(--gray200);
+    color: var(--text-dark-color);
+}
+
+.sm-btn::after {
+    content: "+";
+    font-size: rem;
+    transition: 0.30s;
+}
+
+.sm-btn:hover {
+    background-color: var(--gray300);
+}
+
+details[open]>.sm-btn::after {
+    transform: rotate(45deg);
+}
+
+.sm-btn span {
+    display: flex;
+    font-size: 2rem;
+    margin-right: 16px;
+}
+
+.footer {
+    font-size: 2rem;
+}
+
+.link {
+    text-decoration: none;
+    color: #1473e8;
+    font-size: 2rem;
+}
+
+.film-name {
+    font-weight: 500;
+    font-style: italic;
+}
+
+.date {
+    font-weight: 500;
+}
+
+.fa-solid {
+    margin: auto;
+    padding-right: 10px;
+}
+
+.sad {
+    filter: grayscale(100%);
+}

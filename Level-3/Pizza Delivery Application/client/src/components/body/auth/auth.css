@@ -1,0 +1,116 @@
+.login_page{
+    max-width: 500px;
+    margin: auto;
+    color: black;
+    padding: 0 15px;
+}
+.login_page h2{
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin: 50px 50px;
+    letter-spacing: 1.5px;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.login_page label{
+    color: black;
+    margin: 0px;
+}
+
+.login_page input{
+    width: 100%;
+    height: 45px;
+    margin: 20px 0;
+    border: 2px solid black;
+    outline: none;
+    padding: 0 10px;
+}
+.login_page .row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    align-items: flex-start;
+}
+.login_page .row a{
+    color: rgb(250, 111, 111);
+    text-transform: lowercase;
+    text-decoration: none;
+    letter-spacing: normal;
+}
+.login_page .row a:hover{
+    color: red;
+}
+.login_page .row button{
+    width: 150px;
+    padding: 10px 0;
+    color: black;
+    background: white;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-align: center;
+    margin: 10px;
+}
+.login_page .row button:hover{
+    background-color: rgb(48, 197, 48);
+}
+.login_page p{
+    margin: 5px 0;
+    color: black;
+    margin: 13px;
+    padding: 2px;
+}
+.login_page a{
+    color: rgb(250, 111, 111);
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: normal;
+}
+.login_page a:hover{
+    color: red;
+}
+/* ------------- Forgot Password --------------- */
+.fg_pass h2{
+    color: #555;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+    margin: 50px 0;
+    letter-spacing: 1.3px;
+}
+.fg_pass .row{
+    max-width: 500px;
+    margin: auto;
+    padding: 0 10px;
+}
+.fg_pass .row input{
+    width: 100%;
+    height: 45px;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 0 15px;
+    border-radius: 3px;
+    margin: 5px 0;
+}
+.fg_pass .row button{
+    background:  #FFE4C4;
+    color: black;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    border-radius: 3px;
+    margin-top: 15px;
+}
+/* ---------- Facebook / Google ---------------- */
+
+.login_page .social button{
+    width: 100%;
+    height: 50px;
+    font-size: 14px;
+    font-weight: bolder;
+    color: black;
+    text-transform: capitalize;
+    letter-spacing: 1.3px;
+    box-shadow: 0 2px 4px rgb(95, 85, 85);
+}

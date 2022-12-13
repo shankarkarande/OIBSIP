@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <div class="bg-container">
+        <div class="container">
+            <h3 style="text-align: center;">Level-1-Task-3</h3>
+            <h1 style="text-align: CENTER;">Temperature Converter</h1>
+            <form oninput="result.value=onInput(degree.value, fromScale.value, toScale.value)">
+
+                <h4>Convert from</h4>
+
+                <input type="number" id="degree" placeholder="Enter Temperature" onkeypress="onlyNumbers(event)">
+
+                <select id="fromScale">
+                    <option value="Celsius" selected>°C</option>
+                    <option value="Fahrenheit">°F</option>
+                    <option value="Kelvin">K</option>
+                </select>
+
+                <h4>to</h4>
+
+                <select id="toScale">
+                    <option value="Celsius">Celsius</option>
+                    <option value="Fahrenheit" selected>Fahrenheit</option>
+                    <option value="Kelvin">Kelvin</option>
+                </select>
+
+                <h4>Result</h4>
+
+                <output name="result" for="degree fromScale toScale"></output>
+
+            </form>
+        </div>
+        <div>
+            <h5 style="text-align: center;">© Copyright, Shankar Karande</h5>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
