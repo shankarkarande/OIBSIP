@@ -9,5 +9,12 @@ It's A Fantastic Opportunity To Gain Hands-On Experience In The Web Development 
 ### Level-2 Task-3 - A Basic TODO Web-App <a href="https://github.com/shankarkarande/OIBSIP/tree/main/Level-2/Task-3%20To-Do%20App" rel="nofollow">View Source</a>
 ### Level-3 Task-1 - Pizza Delivery Web-App <a href="https://github.com/shankarkarande/OIBSIP/tree/main/Level-3/Pizza%20Delivery%20Application" rel="nofollow">View Source</a>
 
+## Developers
+<li>Shankar Karande (<a href="mailto:shankarkarande440@gmail.com">shankarkarande440@gmai.com</a>)</li>
+
+## Appendix
+<p dir="auto">Visit Following Link For More Info :-
+<a href="https://medium.com/@shankarkarande440/oasisinfobyte-internship-experience-c082abb8fde8" rel="nofollow">Medium Blog</a></p>
+
 
 
