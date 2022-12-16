@@ -16,11 +16,11 @@ A Basic TODO Web-App - <a href="https://github.com/shankarkarande/OIBSIP/tree/ma
 #### Level-3 Task-1 
 Pizza Delivery Web-App - <a href="https://github.com/shankarkarande/OIBSIP/tree/main/Level-3/Pizza%20Delivery%20Application" rel="nofollow">View Source</a>
 
-### Developers
+### Developer
 <li>Shankar Karande (<a href="mailto:shankarkarande440@gmail.com">shankarkarande440@gmai.com</a>)</li>
 
 ### Appendix
-<p dir="auto">Visit Following Link For More Info :-
+<p dir="auto">Medium :-
 <a href="https://medium.com/@shankarkarande440/oasisinfobyte-internship-experience-c082abb8fde8" rel="nofollow">Medium Blog</a></p>
 
 
