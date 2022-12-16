@@ -17,7 +17,7 @@ A Basic TODO Web-App - <a href="https://github.com/shankarkarande/OIBSIP/tree/ma
 Pizza Delivery Web-App - <a href="https://github.com/shankarkarande/OIBSIP/tree/main/Level-3/Pizza%20Delivery%20Application" rel="nofollow">View Source</a>
 
 ### Developer
-<li>Shankar Karande (<a href="mailto:shankarkarande440@gmail.com">shankarkarande440@gmai.com</a>)</li>
+Shankar Karande (<a href="mailto:shankarkarande440@gmail.com">shankarkarande440@gmail.com</a>)
 
 ### Appendix
 <p dir="auto">Medium :-
